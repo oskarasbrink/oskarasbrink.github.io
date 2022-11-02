@@ -34,7 +34,7 @@
                 <a href="#education">Education</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects">Projects & contributions</a>
             </li>
             <li>
                 <a href="#skills">Skills</a>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        fill in general info here.
+                        I'm a student in my final year of the Data Science master program att Uppsala University, with a prior BSc in Computer science. I'm currently looking for exjobb/thesis work in the Data Science field starting in January, be it machine learning or Data engineering. My passion is building and implementing in code. I am more of an implementer/doer than a mathematician or scientist, even though my current masters program focuses somewhat more on the latter. I enjoy working in teams and seeing things we build together come to fruition. 
                     </p>
                 </div>
             </div>
@@ -89,8 +89,28 @@
                 <h4>Data Enginnering Science Intern</h4>
                 <p>
                     A role with deliverables mixed in with learning. Main task was further developing and packaging of collected work relating to an AutoGrader for notebooks in Jupyter and Databricks format that will be presented to 
-                    Databricks later in the year. Hours for self-study were put into reading further into high-performance Spark. Necessary skills includes Docker-compose, automation of processes using github actions, bash-scripting, refactoring, and general OOP-ification of a project in python. 
+                    Databricks later in the year. Hours for self-study were put into reading further into high-performance Spark. Necessary skills includes Docker-compose, automation of processes using github actions, bash-scripting, refactoring, and general OOP-ification and orgnanizing of an existing project in python. 
                 </p>
+            </div>
+            <div data-date="July 2022 – Present">
+                <h3>General JSON notebook AutoGrader</h3>
+                <!--<h4>Data Enginnering Science Intern</h4>-->
+                <p>
+                    Partly developed during the summer internship at Combient Mix, and as a side project since then, this  <A HREF = "https://github.com/datascience-intro/GenJSONnotebookGrader"></A>GenJSONnotebookGrader</h3> is a general AutoGrader for notebooks in Ipynb and Databricks format. My main task bugfixes, adding functionalities, rewriting code and refactoring and restructuring the whole project. This is still in early development, and is intended to be easily implemented and scaleable to other courses. This AutoGrader is currently used in .ipynb format for a masters level course at Uppsala University and in databricks format for a Phd level course in Scalable Distributed Machine Learning. It is able to fetch student submissions from the learning management system Canvas
+                    , add extra cells to the notbook to check student solutions when run, and then grade it locally or on a Databricks cluster depending on the format of the notebook. Then remove the traces of the Testing, convert it back to its original format submit to Canvas with a grade and feedback. The main idea with this project is to aim for breaking down each format into its JSON-parts with the intent to be format and platform agnostic. This was presented and demonstated to <A HREF = "https://www.databricks.com/university"></A>Databricks University Alliance</h3>  in late september 2022.
+                </p>
+            </div>
+            
+
+            
+            <div data-date="September 2022 - January 2023">
+                <h3>Full time Data Science project at <A HREF = "https://www.trase.earth"></A>Trase.earth</h3>
+                <h4>Data management & preprocessing, </h4>
+                <p>
+                    <A HREF = "https://www.trase.earth"></A>Trase</h3> works under <A HREF = "https://www.sei.org"></A>Stockholm Environment Institute</h3> in supply chain mapping deforestation-linked commodities. 
+                </p>
+
+
             </div>
             <div data-date="March 2021 – August 2021">
                 <h3>CAiM-lab at Uppsala University</h3>
@@ -135,8 +155,8 @@
     </div>
     <!-- End #education -->
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+    <div id="projects & contributions" class="background-alt">
+        <h2 class="heading">Projects & contributions</h2>
         <div class="container">
             <div class="row">
                 <div class="project shadow-large">
@@ -148,14 +168,28 @@
                         <h3>GenJSONnotebookGrader</h3>
                         <p>
                             An AutoGrader for notebooks in JSON-format and Currently supports notebooks in Jupyter and Databricks formats. It fetches assignment from Canvas, converts them to JSON-format, grades them in a Docker envirnonment for Jupyter and on Databricks for dbc notebooks. After sucessful grading the assignments are automatically uploaded to Canvas with its respective grade.
-                            My main part in this was combining projects for the handling of the notebooks, autograder and Canvas communication into one package, and refactoring and cleaning/OOP-ification of the whole project. I also continued the development of the system for Databricks notebooks and added some fetures related to them. Support for Zeppelin notebooks is also under development.
+                            My main part in this was combining projects for the handling of the notebooks, autograder and Canvas communication into one package, and refactoring and cleaning/OOP-ification of the whole project. I also continued the development of the system for Databricks notebooks and added some fetures related to them.
                         </p>
                         <a href="https://github.com/datascience-intro/GenJSONnotebookGrader">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Contribution do ScaDaMaLe repository </h3>
+                        <p>
+                            A Phd-level course in Data Science at Uppsala University. I contributed with an implementation of automatic generation of MDBooks, that previously where generated manually. This was done through github actions and dockerization. I also helped with the setup of the AutoGrader for the course, in databricks format.
+                        </p>
+                        <a href="https://lamastex.github.io/ScaDaMaLe/">View course material page</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
                 <!-- End .project -->
-                <!--
+                
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/project.jpg" />
@@ -164,14 +198,14 @@
                     <div class="project-info">
                         <h3>Football-odds predictor</h3>
                         <p>
-                            A project developed with friends to use data from Allsvenskan-matches to build and train a Machine-Learning model to predict odds. The intention is to use it to predict odds on Lower-level leagues once the model shows good results, using the fact that betting-companies put less efforts in lower-level leagues. This is a hobby project and there is no current 
-                            intention to actually use it for bets, just trying out our skills in data cleaning and Machine-Learning.
+                            A project developed with friends to use data from Allsvenskan-league to build and train a Machine-Learning model to predict odds. The intention is to use it to predict odds on Lower-level leagues once the model shows good results, using the fact that betting-companies put less efforts in lower-level leagues. just trying out our skills in data cleaning and Machine-Learning. 
+                            Currently trying out different models, loss functions and ways to standardize football-odds from different betting companies. Code and instructions on how to format your own data is under way to be able to use your own data, since we don't provide our data sources.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/oskarasbrink/Football-odds-predictor">View Project</a>
                     </div>
                     
                 </div>
-                -->
+                
                 <!--
                 <div class="project shadow-large">
                     <div class="project-image">
@@ -202,6 +236,15 @@
                         <a href="https://github.com/oskarasbrink/Pong-with-Deep-Q-learning">View Project</a>
                     </div>
                     <!-- End .project-info -->
+                </div>
+                <div class="project shadow-large">
+                    <div class="project-info">
+                        <h3>Implementing ECLAT in Python</h3>
+                        <p>
+                            A 3 person school project in Data Mining. Our project focused on implementing a state of the art <a href="https://en.wikipedia.org/wiki/Association_rule_learning">Association rule mining</a> algorithm called ECLAT, a successor to the Apriori-algorithm. Results were presented orally, and the slides are found in the below Github repository.
+                        </p>
+                        <a href="https://github.com/oskarasbrink/ECLAT-DataMining-Project">View Project</a>
+                    </div>
                 </div>
                 <!-- End .project -->
             </div>
